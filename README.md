@@ -1,6 +1,6 @@
 # studygolang
 
-golang学习笔记
+golang学习笔记。
 
 References: 
 
