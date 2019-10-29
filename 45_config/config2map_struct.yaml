@@ -1,0 +1,33 @@
+label: test
+run_model: test
+debug: true
+monitor_apps:
+  Rest:
+    app_name: "Rest"
+    log_files: ["/data/stellar3/stellar_3.1.0/logs/error.log"]
+    pre_match: "2006.01.02"
+    must: []
+    must_not: ["abc", "d"]
+    counts:
+      - monitor_string: "__all__"
+        max_num: 3
+      - monitor_string: "Push Failed with responseCode 503"
+        max_num: 2
+  User-message:
+    app_name: "User-message"
+    log_files: ["/data/stellar3/ucaas-stellar3-user-message/logs/error.log"]
+    pre_match: "2006.01.02"
+    must: ["abc", "d"]
+    must_not: []
+    counts:
+      - monitor_string: "__all__"
+        max_num: 2
+  User:
+    app_name: "User-message"
+    log_files: ["/data/stellar3/ucaas-stellar3-user-message/logs/error.log"]
+    pre_match: "2006.01.02"
+    must: ["abc", "d"]
+    must_not: []
+    counts:
+      - monitor_string: "Push Failed with responseCode 503"
+        max_num: 2

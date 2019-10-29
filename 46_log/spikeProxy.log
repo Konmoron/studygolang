@@ -1,0 +1,38 @@
+{"level":"info","time":"2019-07-10T09:39:02.591+0800","caller":"D:/data/go/src/studygolang/46_log/zap_log_custom.go:43","msg":"log 初始化成功","serviceName":"spikeProxy"}
+{"level":"info","time":"2019-07-10T09:39:02.633+0800","caller":"D:/data/go/src/studygolang/46_log/zap_log_custom.go:45","msg":"无法获取网址","serviceName":"spikeProxy","url":"http://www.baidu.com","attempt":3,"backoff":1}
+2019-07-10T09:40:20.619+0800	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:43	log 初始化成功	{"serviceName": "spikeProxy"}
+2019-07-10T09:40:20.665+0800	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:45	无法获取网址	{"serviceName": "spikeProxy", "url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+2019-07-10T09:48:54.203+0800	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:43	log 初始化成功
+2019-07-10T09:48:54.245+0800	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:45	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+1.562723995421496e+09	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:43	log 初始化成功
+1.562723995421496e+09	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:45	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+1.5627240268717083e+12	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:43	log 初始化成功
+1.5627240268717083e+12	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:45	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+2019-07-10T10:00:45.158+0800	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:43	log 初始化成功
+2019-07-10T10:00:45.205+0800	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:45	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+2019-07-10 10:02:59.713	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:47	log 初始化成功
+2019-07-10 10:02:59.763	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:49	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+2019-07-10 10:04:36.764	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:47	log 初始化成功
+2019-07-10 10:08:29.881	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:47	log 初始化成功
+2019-07-10 10:08:29.931	info	D:/data/go/src/studygolang/46_log/zap_log_custom.go:49	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+{"level":"info","time":"2019-07-10T10:14:24.109+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:54","msg":"log 初始化成功","serviceName":"serviceName"}
+{"level":"info","time":"2019-07-10T10:14:24.160+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:55","msg":"无法获取网址","serviceName":"serviceName","url":"http://www.baidu.com","attempt":3,"backoff":1}
+{"level":"info","time":"2019-07-10T10:16:13.351+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:54","msg":"log 初始化成功"}
+{"level":"info","time":"2019-07-10T10:16:13.407+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:55","msg":"无法获取网址","url":"http://www.baidu.com","attempt":3,"backoff":1}
+2019-07-10T10:24:24.561+0800	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:55	log 初始化成功
+2019-07-10T10:24:24.612+0800	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:56	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+{"level":"info","time":"2019-07-10T10:24:56.513+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:55","msg":"log 初始化成功"}
+{"level":"info","time":"2019-07-10T10:24:56.554+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:56","msg":"无法获取网址","url":"http://www.baidu.com","attempt":3,"backoff":1}
+2019-07-10T10:25:30.076+0800	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:55	log 初始化成功
+2019-07-10T10:25:30.122+0800	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:56	无法获取网址
+详细信息：	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+{"level":"info","time":"2019-07-10T10:25:44.698+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:55","msg":"log 初始化成功"}
+{"level":"info","time":"2019-07-10T10:25:44.744+0800","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:56","msg":"无法获取网址\n详细信息：","url":"http://www.baidu.com","attempt":3,"backoff":1}
+{"level":"info","time":"2019-07-10 10:30:14.315","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:62","msg":"log 初始化成功"}
+{"level":"info","time":"2019-07-10 10:30:14.366","linenum":"D:/data/go/src/studygolang/46_log/zap_lograte.go:63","msg":"无法获取网址\n详细信息：","url":"http://www.baidu.com","attempt":3,"backoff":1}
+2019-07-10 10:30:30.561	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:62	log 初始化成功
+2019-07-10 10:30:30.632	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:63	无法获取网址
+详细信息：	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
+2019-07-10 10:30:50.104	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:62	log 初始化成功
+2019-07-10 10:30:50.146	info	D:/data/go/src/studygolang/46_log/zap_lograte.go:63	无法获取网址
+		详细信息：	{"url": "http://www.baidu.com", "attempt": 3, "backoff": 1}
