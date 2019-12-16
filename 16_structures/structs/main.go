@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"studygolang_com/structs/computer"
+	"studygolang/16_structures/structs/computer"
 )
 
 func main() {

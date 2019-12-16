@@ -44,3 +44,5 @@ logs/*.log
 *nginx.log
 
 *.~vsdx
+
+vendor/
