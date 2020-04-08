@@ -17,7 +17,14 @@ type Foo struct {
 // 	1. https://www.jianshu.com/p/40cb706853cd
 // 	2. https://stackoverflow.com/questions/6395076/using-reflect-how-do-you-set-the-value-of-a-struct-field
 func setValueByReflect(f *Foo) {
+	// TypeOf 的参数必须为 值类型，不能是指针，否则
+	// 在执行 NumField() 的时候，会报错：
+	//	panic: reflect: NumField of non-struct type *main.Foo
 	fields := reflect.TypeOf(*f)
+
+	// ValueOf 的参数必须为 指针类型 或者 Interface，
+	// 不能为 值类型，否则，在执行 Elem() 会报错：
+	//	panic: reflect: call of reflect.Value.Elem on struct Value
 	values := reflect.ValueOf(f)
 	// fmt.Println("value Kind after reflect.ValueOf(f) is ", values.Kind())
 
@@ -36,12 +43,12 @@ func setValueByReflect(f *Foo) {
 		index := []int{i}
 		f := values.FieldByIndex(index)
 		if !f.IsValid() {
-			fmt.Println("没有找到Name的字段")
+			// fmt.Println("没有找到Name的字段")
+			fmt.Println("没有找到", fieldName, "的字段")
 			return
 		}
 
-		// fmt.Println(f.Type().Name())
-
+		// 获取 field 的类型
 		fieldType := f.Type().Kind()
 
 		switch fieldType {
