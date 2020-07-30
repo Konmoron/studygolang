@@ -18,4 +18,4 @@ require (
 	imer.io/tools v0.0.0
 )
 
-replace imer.io/tools => ../imer.io/tools
+replace imer.io/tools => ../../../imer.io/tools
